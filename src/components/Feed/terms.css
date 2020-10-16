@@ -1,0 +1,12 @@
+ol,
+ul {
+  padding: 0;
+}
+
+ol:first-child {
+  padding-top: 8px;
+}
+
+ul:first-child {
+  padding-top: 8px;
+}

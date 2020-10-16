@@ -1,0 +1,13 @@
+@media only screen and (min-width: 600px) {
+    .mobilebuttons {
+        display:none !important;
+    }
+} 
+
+
+@media only screen and (max-width: 600px) {
+ .desktopbuttons {
+        display:none !important; 
+    }
+} 
+

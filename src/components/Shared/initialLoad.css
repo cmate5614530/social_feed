@@ -1,0 +1,69 @@
+.content div {
+  flex: 1;
+  background: #aaa;
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+.flexboxrow {
+  display: flex;
+  flex-direction: row;
+}
+.flexboxcolumn {
+  display: flex;
+  flex-direction: column;
+}
+.avatar {
+  flex: 1;
+  background: #aaa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 4em;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+.content {
+  flex: 5;
+}
+.imageplaceholder {
+  height: 15em;
+  background: #aaa;
+  margin-top: 16px;
+}
+.footer div {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  height: 1em;
+  background: #aaa;
+  flex: 1;
+}
+.footer {
+  margin-top: 8px;
+}
+.content1 {
+  /* flex: 1; */
+  width: 20%;
+}
+.maincontainer {
+  animation: fading 1.5s infinite;
+}
+.loadercontainer {
+  border-bottom: 3px solid #aaa;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  margin-top: 16px;
+}
+@keyframes fading {
+  0% {
+    opacity: 0.1;
+  }
+
+  50% {
+    opacity: 0.2;
+  }
+
+  100% {
+    opacity: 0.1;
+  }
+}

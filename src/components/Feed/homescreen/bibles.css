@@ -1,0 +1,94 @@
+.s1, .s2{
+    font-weight: bold;
+    text-align: center;
+    font-size: large;
+}
+.r{
+    text-align: center;
+    font-style: italic;
+}
+span{
+    font-size: smaller;
+    margin-inline-end: 3px;
+}
+.v::before{
+    content: '\A'; white-space: pre;
+}
+.mt{
+    font-weight: bolder;
+    text-align: center;
+    font-size: larger;
+}
+.is1 {
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+}
+.iot{
+    font-weight: bold;
+}
+.ref{
+    font-weight: bold;
+}
+.sea :hover{
+    color: cadetblue;
+}
+.pagenate{
+    text-align: center;
+}
+p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+p .q1{
+    display: inline;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 3px;
+    margin-inline-end: 0px;
+}
+p .q2{
+    display: inline;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 3px;
+    margin-inline-end: 0px;
+}
+p .p{
+    display: inline;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 3px;
+    margin-inline-end: 0px;
+}
+p .b{
+    display: inline;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+p .pi{
+    display: inline;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 3px;
+    margin-inline-end: 0px;
+}
+p .mi, .m{
+    display: inline;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 3px;
+    margin-inline-end: 0px;
+}
+p .r{
+    display: block;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}

@@ -1,0 +1,17 @@
+.paypal-buttons {
+    min-width:0 !important;
+}
+
+.footerlink {
+    width: 15em;
+    border: 1px solid white;
+    margin: 2px;
+    text-align: center;
+    border-radius: 18px;
+}
+.footerlink a {
+    color: white;
+}
+.footerlink:hover {
+    cursor:pointer;
+}

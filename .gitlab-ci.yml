@@ -1,0 +1,43 @@
+variables:
+  S3_BUCKET_PRODUCTION: "buzzraker.com"
+  #S3_BUCKET_DEVELOPMENT: "react-twitter-dev"
+  CI: $CI_VALUE
+ 
+
+deploy production:
+  stage: build
+  image: nikolaik/python-nodejs:latest
+  script:
+  - npm install -g bestzip
+  - yarn
+  - yarn build
+  - pip install awscli
+  - aws s3 cp ./build/ s3://$S3_BUCKET_PRODUCTION/ --recursive --include "*"
+  - bestzip build.zip build/*
+  - chmod 777 upload.sh
+  - ./upload.sh
+ 
+  - echo "Deploy to buzzraker.com as production"
+  artifacts:
+      paths:
+      - build
+  environment:
+      name: production
+      url:  http://buzzraker.com.s3-website.us-west-2.amazonaws.com
+  only:
+  - aws-production
+
+# deploy development:
+#   stage: build
+#   image: nikolaik/python-nodejs:latest
+#   script:
+#   - yarn
+#   - yarn build
+#   - pip install awscli
+#   - aws s3 cp ./build/ s3://$S3_BUCKET_DEVELOPMENT/ --recursive --include "*"
+#   - echo "Deploy tohttp://react-twitter-dev.s3-website-us-west-2.amazonaws.com"
+#   environment:
+#         name: development
+#         url: http://react-twitter-dev.s3-website-us-west-2.amazonaws.com
+#   only:
+#   - development

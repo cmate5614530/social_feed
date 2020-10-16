@@ -1,0 +1,19 @@
+@media only screen and (max-width: 600px) {
+  .mc {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+  .c1 {
+    align-items: flex-start !important;
+  }
+  .c2 {
+    margin-left: 24px !important;
+  }
+}
+
+.resetemailbutton:hover {
+  cursor: pointer;
+}
+.resetemailbutton {
+  text-align: right;
+}

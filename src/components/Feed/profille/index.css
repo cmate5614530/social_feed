@@ -1,0 +1,24 @@
+@media only screen and (max-width: 600px) {
+  .paypalbox {
+    flex-direction: column !important;
+  }
+  .profilepicdiv {
+    top: 75% !important;
+    left: 2% !important;
+  }
+  .profilepiccss {
+    width: 7em !important;
+    height: 7em !important;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .paypalbox {
+    flex-direction: row !important;
+  }
+
+  .profilepiccss {
+    width: 10em !important;
+    height: 10em !important;
+  }
+}

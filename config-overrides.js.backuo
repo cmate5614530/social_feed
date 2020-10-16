@@ -1,0 +1,22 @@
+const WebpackRequireFrom = require("webpack-require-from");
+const BundleAnalyzerPlugin = require("webpack-bundle-analyzer")
+  .BundleAnalyzerPlugin;
+module.exports = {
+  // The Webpack config to use when compiling your react app for development or production.
+  webpack: function(config, env) {
+    // ...add your webpack config
+    console.log("webpack config");
+    console.log(config);
+    console.log("env");
+    console.log(env);
+    config.plugins.push(
+      new WebpackRequireFrom({
+        variableName: "chunkURL"
+      })
+    );
+    config.plugins.push(new BundleAnalyzerPlugin());
+
+    console.log(config);
+    return config;
+  }
+};

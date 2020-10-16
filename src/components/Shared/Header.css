@@ -1,0 +1,9 @@
+@media only screen and (max-width: 950px) and (min-width: 600px) {
+  .test {
+    display: block !important;
+  }
+}
+
+.showpointer {
+  cursor: pointer;
+}
